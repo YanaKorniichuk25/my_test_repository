@@ -1,0 +1,265 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  color: #fafafa;
+  background-color: #1c1d20;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 734px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    min-width: 1270px;
+  }
+}
+
+:root {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.benefits {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .benefits {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits-title-caption-container {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits-title {
+    margin-right: 58px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .benefits-title {
+    margin-right: 410px;
+  }
+}
+
+.benefits-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits-title {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits-title {
+    color: #fff;
+    font-size: 48px;
+    line-height: 1.125;
+    letter-spacing: -0.04em;
+  }
+}
+
+.benefits-caption {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.285;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits-caption {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    width: 381px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .benefits-caption {
+    width: 405px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .benefits-caption {
+    width: 565px;
+  }
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+.benefits-item {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  padding: 28px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits-item {
+    padding: 32px;
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .benefits-item {
+    width: calc((100% - 40px) / 3);
+  }
+}
+
+.number-icon-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+@media only screen and (min-width: 768px) {
+  .number-icon-container {
+    margin-bottom: 32px;
+  }
+}
+
+.icon-container {
+  border-radius: 50%;
+  background-color: #1d1d1d;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-container:hover {
+  background-color: #bea69e;
+}
+
+.benefits-list-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  fill: transparent;
+  stroke: #777777;
+}
+
+.benefits-item-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  /*margin-bottom: 164px;*/ /* Видалено, оскільки це було зайве */
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits-item-title {
+    /*margin-bottom: 180px;*/ /* Видалено, оскільки це було зайве */
+  }
+}
+
+.benefits-item-caption {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.285;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits-item-caption {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
