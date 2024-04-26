@@ -1,3 +1,4 @@
+/* Common styles */
 h1,
 h2,
 h3,
@@ -69,34 +70,42 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+/* Benefits section styles */
 .benefits {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 375px) {
   .benefits {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
   .benefits {
     padding-top: 75px;
     padding-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start */
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .benefits-title-caption-container {
-    display: flex;
-  }
+.benefits-title-caption-container {
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {
   .benefits-title {
-    margin-right: 58px;
+    margin-right: auto; /* Pushes the title to the left */
+    margin-bottom: 20px; /* Added for spacing */
+  }
+
+  .benefits-list {
+    margin-left: auto; /* Pushes the list to the right */
   }
 }
 
@@ -111,22 +120,13 @@ body {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: -0.04em;
-  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .benefits-title {
     margin-bottom: 0;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .benefits-title {
-    color: #fff;
     font-size: 48px;
     line-height: 1.125;
-    letter-spacing: -0.04em;
   }
 }
 
@@ -141,10 +141,8 @@ body {
 
 @media only screen and (min-width: 768px) {
   .benefits-caption {
-    color: #fff;
     font-size: 16px;
     line-height: 1.25;
-    letter-spacing: -0.02em;
     width: 381px;
     margin-bottom: 50px;
   }
@@ -164,19 +162,9 @@ body {
 
 .benefits-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap; /* Wrap items */
+  justify-content: flex-end; /* Align items to the end */
   gap: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .benefits-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
 }
 
 .benefits-item {
@@ -184,7 +172,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
   padding: 28px;
-  width: 100%;
+  width: calc(50% - 10px); /* Two items per row with gap */
 }
 
 @media only screen and (min-width: 768px) {
@@ -239,7 +227,6 @@ body {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
-  /*margin-bottom: 164px;*/ /* Видалено, оскільки це було зайве */
 }
 
 @media only screen and (min-width: 768px) {
