@@ -93,10 +93,10 @@ body {
   }
 }
 
-.benefits-title-caption-container {
+/* .benefits-title-caption-container {
   display: flex;
   flex-direction: column;
-}
+} */
 
 @media only screen and (min-width: 768px) {
   .benefits-title {
@@ -184,7 +184,7 @@ body {
 
 @media only screen and (min-width: 1280px) {
   .benefits-item {
-    width: calc((100% - 40px) / 3);
+    width: calc((100% - 40px) / 2);
   }
 }
 
